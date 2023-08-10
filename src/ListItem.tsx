@@ -33,7 +33,7 @@ const ListItem: React.FC<ListItemProps> = ({item}: ListItemProps) => {
 
     const formatItem = (item: Item): ReactNode => {
         if (item instanceof Date) {
-            return format(item, 'yyyy-mm-dd');
+            return format(item, 'yyyy-MM-dd');
         }
         return item;
     }
